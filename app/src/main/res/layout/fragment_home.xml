@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mild_white"
+    tools:context=".ui.fragments.home.HomeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_infolist"
+        android:paddingVertical="@dimen/_25sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:id="@+id/rv_search"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:background="@color/mild_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/container_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_national_thermal_power_logo" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_logo"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Team Connect"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_toEndOf="@id/iv_logo"
+                android:fontFamily="@font/source_sans_pro"
+                android:textColor="@color/mild_black"
+                android:textSize="@dimen/_10ssp"
+                tools:text="Western Region - 1 HQ" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo"
+                android:layout_marginStart="@dimen/_minus5sdp"
+                android:layout_marginTop="@dimen/_minus5sdp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:elevation="@dimen/_5sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                tools:itemCount="1"
+                tools:listitem="@layout/home_rv_item1" />
+
+            <RelativeLayout
+                android:id="@+id/container_generationData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_1"
+                android:layout_marginTop="@dimen/_minus10sdp">
+
+                <TextView
+                    android:id="@+id/action_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/label_gen_data"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:text="More"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_10ssp" />
+
+                <TextView
+                    android:id="@+id/label_gen_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Generation Data"
+                    android:textColor="@color/mild_black" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontal_slide_gen_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/action_more"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:scrollbarFadeDuration="100"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:minWidth="@dimen/_70sdp"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_running_unit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/_25ssp"
+                                        tools:text="7" />
+
+                                    <TextView
+                                        android:id="@+id/tv_total_unit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_minus5sdp"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:textColor="@color/grey"
+                                        android:textSize="@dimen/_16ssp"
+                                        tools:text="/9" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:fontFamily="@font/source_sans_pro_semibold"
+                                    android:text="Units"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/_12ssp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:minWidth="@dimen/_70sdp"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_genrationData"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/_25ssp"
+                                        tools:text="7322" />
+
+                                    <TextView
+                                        android:id="@+id/tv_genration_data_unit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_minus5sdp"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:text="mw"
+                                        android:textColor="@color/grey"
+                                        android:textSize="@dimen/_16ssp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:fontFamily="@font/source_sans_pro_semibold"
+                                    android:text="Generation"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/_12ssp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+
+                            android:background="@color/white"
+                            android:minWidth="@dimen/_70sdp"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_5sdp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_plf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/_25ssp"
+                                        tools:text="73.3" />
+
+                                    <TextView
+                                        android:id="@+id/tv_plf_unit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_minus5sdp"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:text="%"
+                                        android:textColor="@color/grey"
+                                        android:textSize="@dimen/_16ssp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:fontFamily="@font/source_sans_pro_semibold"
+                                    android:text="PLF"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/_12ssp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:minWidth="@dimen/_70sdp"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_freq"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:padding="@dimen/_5sdp"
+                                        android:textColor="@color/blue"
+                                        android:textSize="@dimen/_25ssp"
+                                        tools:text="70" />
+
+                                    <TextView
+                                        android:id="@+id/tv_freq_unit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_minus5sdp"
+                                        android:fontFamily="@font/source_sans_pro_semibold"
+                                        android:textColor="@color/grey"
+                                        android:textSize="@dimen/_16ssp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:fontFamily="@font/source_sans_pro_semibold"
+                                    android:text="Frequency"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/_12ssp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/label_gen_data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/container_generationData"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Generation Data"
+                android:textColor="@color/mild_black" />
+
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                android:id="@+id/toggle_btns_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_gen_data2"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                app:alignItems="flex_start"
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                app:toggle_horizontalSpacing="@dimen/_5sdp">
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:elevation="@dimen/_20sdp"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="All"
+                    app:toggle_textColor="@color/grey" />
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag_circular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:elevation="@dimen/_20sdp"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="Circular"
+                    app:toggle_textColor="@color/grey" />
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag_notices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:elevation="@dimen/_20sdp"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="Notices"
+                    app:toggle_textColor="@color/grey" />
+
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:elevation="@dimen/_20sdp"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="News"
+                    app:toggle_textColor="@color/grey" />
+
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:elevation="@dimen/_20sdp"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="Others"
+                    app:toggle_textColor="@color/grey" />
+                <!-- ... -->
+
+            </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/container_rv_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toggle_btns_grp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/rv_item_3" />
+
+                    <TextView
+                        android:id="@+id/label_viewMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="View More..."
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_12ssp"
+                      />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/drawable/ic_lock_24.xml" value="0.1125" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/drawable/ic_show_password_24.xml" value="0.1125" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/drawable/ic_work_24.xml" value="0.2203125" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/activity_main.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/app_bar_main.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/content_main.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/fragment_directory.xml" value="0.19655797101449277" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/fragment_employees.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/home_rv_item1.xml" value="0.18297101449275363" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/item_photos.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/menu_notification_action_view.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/nav_header_main.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/primary_button_layout.xml" value="0.18931159420289856" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/rv_item_3.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/layout/temp.xml" value="0.15715579710144928" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Acompworld/TeamConnect/3-MobileApp/TeamConnect/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/drawable/ic_password.xml" value="0.2203125" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/drawable/ic_password_hide.xml" value="0.2203125" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/drawable/rounded_corner.xml" value="0.2203125" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/drawable/show_password_selector.xml" value="0.2203125" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/activity_login.xml" value="0.12771739130434784" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/directory_item.xml" value="0.17119565217391305" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/fragment_directory.xml" value="0.17572463768115942" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/fragment_home.xml" value="0.10208333333333333" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/fragment_lms.xml" value="0.17119565217391305" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/item_category.xml" value="0.17119565217391305" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/item_dpt_docs.xml" value="0.17119565217391305" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/item_lms.xml" value="0.16621376811594202" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/layout/lms_item.xml" value="0.17119565217391305" />
+        <entry key="..\:/Acompworld/teamconnect/teamconnect-android/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/drawable/add_image_box.xml" value="0.2703125" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/drawable/chip_bc.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/drawable/grey_bc.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/drawable/hop_chip_bc.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/drawable/hop_report_icon.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/drawable/item_hop_report.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/drawable/view_box.xml" value="0.2703125" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/font/source_code_pro_bold.xml" value="0.284375" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/dropdown_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_directory.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_download.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_hop.xml" value="0.264" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_incidence.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_incidence_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_incidence_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_incidence_report.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_photos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/fragment_telephone_contact.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_download.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_download_applications.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_download_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_gallery.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_hop_report.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_hop_schedule.xml" value="0.4" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_incidence_detail_image.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_incidence_image.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_incidence_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/item_photos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/primary_button_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/rv_item_3.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/layout/temp.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/menu/incidence_detail_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/menu/incidence_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/menu/incidence_reported_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vishal/AndroidStudioProjects/NewTeamConnect/teamconnect-android/app/src/main/res/menu/main.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dropdown_menu_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:text="Reportable"
+    android:fontFamily="@font/source_sans_pro_bold"
+    android:textColor="@color/mild_black"
+    android:padding="@dimen/_12sdp"
+    android:textSize="@dimen/_12sdp">
+
+</TextView>

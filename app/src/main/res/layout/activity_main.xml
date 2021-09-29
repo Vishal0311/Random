@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_above="@id/container_buttom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="@color/blue_lite"
+            android:nestedScrollingEnabled="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer"
+            app:itemTextColor="@color/blue_extra_lite">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_47sdp"
+                android:background="@color/blue_lite"
+                android:layout_gravity="bottom">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:background="@color/blue_extra_lite"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:textColor="@color/blue_extra_lite"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textAppearance="@style/Widget.AppCompat.ListView.Menu"
+                    app:drawableStartCompat="@drawable/ic_outline_settings_24"
+                    app:drawableTint="@color/blue_extra_lite" />
+            </FrameLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/container_buttom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_alignParentBottom="true"
+        android:elevation="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <ImageButton
+                android:id="@+id/nav_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:src="@drawable/ic_book"
+                app:tint="#D1D1D1" />
+
+            <ImageButton
+                android:id="@+id/nav_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/nav_book"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/alert"
+                app:tint="#D1D1D1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/nav_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/blue_circular"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_home"
+                    app:tint="@color/white" />
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/nav_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/nav_grid"
+                android:background="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_saftey"
+                app:tint="#D1D1D1" />
+
+            <ImageButton
+                android:id="@+id/nav_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:src="@drawable/ic_grid"
+                app:tint="#D1D1D1" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

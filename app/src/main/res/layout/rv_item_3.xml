@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:padding="@dimen/_10sdp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_bc"
+            tools:text="08 JAN"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:textSize="@dimen/_10ssp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            />
+
+        <ImageView
+            android:id="@+id/btn_attachment"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16ssp"
+            android:src="@drawable/ic_attachment"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentEnd="true"
+            app:tint="@color/grey"
+            android:elevation="@dimen/_10sdp"
+            android:rotation="-45"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="It is possible to add icons to the buttons and show a different icon when the button is selected"
+            android:textColor="@color/mild_black"
+            android:fontFamily="@font/source_sans_pro"
+            android:textSize="@dimen/_10ssp"
+            android:layout_below="@id/tv_date"
+            android:paddingVertical="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey"
+            android:alpha="0.2"
+            android:layout_below="@id/tv_title"/>
+
+
+
+</RelativeLayout>

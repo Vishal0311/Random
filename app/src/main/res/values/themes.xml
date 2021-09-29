@@ -1,0 +1,152 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TeamConnect" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorSecondaryVariant">@color/yellow</item>
+        <item name="colorOnSecondary">@color/mild_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.TeamConnect.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TeamConnect.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TeamConnect.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BaseTvTheme">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:lineSpacingExtra">@dimen/standardLineSpacingExtra</item>
+        <!--        <item name="android:letterSpacing" tools:targetApi="lollipop">0.05</item>-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="xtraLargeTvTheme" parent="BaseTvTheme">
+        <item name="android:textSize">@dimen/xtraLargeTextSize</item>
+        <item name="fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">03dp</item>
+    </style>
+
+    <style name="xxtraLargeTvTheme" parent="BaseTvTheme">
+        <item name="android:textSize">@dimen/xxtraLargeTextSize</item>
+        <item name="fontFamily">@font/source_sans_pro_bold</item>
+        <item name="android:padding">03dp</item>
+    </style>
+
+
+    <style name="LargeSizeTvTheme" parent="BaseTvTheme">
+        <item name="android:textSize">@dimen/largeTextSize</item>
+        <item name="fontFamily">@font/source_sans_pro_semibold</item>
+    </style>
+
+
+    <style name="BetweenMediumAndLargeSizeTvTheme" parent="BaseTvTheme">
+        <item name="android:textSize">@dimen/betweenmedlargeTextSize</item>
+        <item name="fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">@color/grey_mid</item>
+    </style>
+
+    <style name="MediumSizeTvTheme" parent="BaseTvTheme">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="fontFamily">@font/source_sans_pro</item>
+    </style>
+
+    <style name="SmallSizeTvTheme" parent="BaseTvTheme">
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="fontFamily">@font/source_sans_pro_semibold</item>
+    </style>
+
+
+    <style name="VerySmallSizeTvTheme" parent="BaseTvTheme">
+        <item name="android:textSize">@dimen/verySmallTextSize</item>
+        <item name="fontFamily">@font/source_sans_pro</item>
+    </style>
+
+    <style name="BaseEtTheme">
+        <item name="android:maxLength">50</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:imeOptions">actionGo</item>
+        <!--        <item name="android:padding">0dp</item>-->
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="hintTextColor">@color/blue</item>
+        <item name="android:textColorHint">#b5b5b5</item>
+        <!--        <item name="android:textColorHint">@color/colorEditTextText</item>-->
+<!--        <item name="android:text">@string/defaultEdittextValue</item>-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="fontFamily">@font/source_sans_pro</item>
+
+
+    </style>
+    <style name="OnBoardingInputLayoutTheme" parent="PrimaryInputLayoutTheme"></style>
+
+    <style name="OnBoardingEditTextTheme" parent="BaseEtTheme"></style>
+    <style name="PrimaryInputLayoutTheme" parent="BaseInputLayoutTheme"></style>
+    <style name="BaseInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!--        <item name="boxCornerRadiusBottomEnd">@dimen/standardInputLayoutCornerRadius</item>-->
+        <!--        <item name="boxCornerRadiusBottomStart">@dimen/standardInputLayoutCornerRadius</item>-->
+        <!--        <item name="boxCornerRadiusTopEnd">@dimen/standardInputLayoutCornerRadius</item>-->
+        <!--        <item name="boxCornerRadiusTopStart">@dimen/standardInputLayoutCornerRadius</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="helperTextTextColor">@color/red</item>
+        <item name="startIconTintMode">src_atop</item>
+        <item name="startIconTint">@null</item>
+        <item name="hintTextColor">@color/blue</item>
+        <item name="android:textColorHint">@color/blue</item>
+        <item name="boxStrokeColor">@color/blue</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <!--        <item name="hintTextAppearance">@dimen/verySmallTextSize</item>-->
+
+        <item name="strokeWidth">@dimen/boxStrokeWidthSize</item>
+        <item name="boxStrokeWidthFocused">@dimen/boxStrokeWidthFocused</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="backgroundColor">@android:color/transparent</item>
+        <item name="hintEnabled">true</item>
+
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:lineSpacingExtra">@dimen/standardLineSpacingExtra</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.02</item>
+        <item name="startIconDrawable">@null</item>
+        <item name="endIconDrawable">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">-10dp</item>
+
+    </style>
+
+    <style name="PrimaryButtonLayoutTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="HomeHeadingTheme" parent="xxtraLargeTvTheme">
+        <item name="android:ellipsize">end</item>
+        <item name="singleLine">true</item>
+        <item name="maxLines">1</item>
+    </style>
+    <style name="OnBoardingHeadingTheme" parent="HomeHeadingTheme"></style>
+    <style name="OnBoardingSubHeadingTheme" parent="SmallSizeTvTheme">
+        <item name="android:textColor">@color/blue_lite</item>
+        <item name="fontFamily">@font/source_sans_pro_semibold</item>
+    </style>
+</resources>

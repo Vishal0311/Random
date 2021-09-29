@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.acompworld.teamconnect.ui.fragments.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_infoList"
+            app:destination="@id/nav_infoList"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_home"
+        app:destination="@id/nav_home" />
+
+    <fragment
+        android:id="@+id/nav_directory"
+        android:name="com.acompworld.teamconnect.ui.fragments.directory.DirectoryFragment"
+        android:label="Directory"
+        tools:layout="@layout/fragment_directory">
+
+        <action
+            android:id="@+id/action_nav_directory_to_nav_emp_profile"
+            app:destination="@id/nav_emp_profile"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_nav_directory_to_nav_tele_directory"
+            app:destination="@id/nav_tele_directory"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_emp_profile"
+        android:name="com.acompworld.teamconnect.ui.fragments.directory.EmployeeProfile"
+        android:label=""
+        tools:layout="@layout/fragment_employees" />
+
+
+    <fragment
+        android:id="@+id/nav_tele_directory"
+        android:name="com.acompworld.teamconnect.ui.fragments.directory.TelePhoneContact"
+        android:label=""
+        tools:layout="@layout/fragment_telephone_contact" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.acompworld.teamconnect.ui.fragments.AboutUs"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/nav_departments"
+        android:name="com.acompworld.teamconnect.ui.fragments.department.DepartmentList"
+        android:label="Departments"
+        tools:layout="@layout/fragment_department_list">
+        <action
+            android:id="@+id/action_nav_departments_to_departmentInfo"
+            app:destination="@id/departmentInfo"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/departmentInfo"
+        android:name="com.acompworld.teamconnect.ui.fragments.department.DepartmentInfo"
+        android:label=""
+        tools:layout="@layout/fragment_department_info" />
+    <fragment
+        android:id="@+id/departmentDocs"
+        android:name="com.acompworld.teamconnect.ui.fragments.department.DepartmentDocs"
+        android:label=""
+        tools:layout="@layout/fragment_department_docs" />
+    <action
+        android:id="@+id/action_global_departmentDocs"
+        app:destination="@id/departmentDocs"
+        app:enterAnim="@anim/enter_from_right"
+        app:exitAnim="@anim/exit_to_left"
+        app:popEnterAnim="@anim/enter_from_left"
+        app:popExitAnim="@anim/exit_to_right" />
+    <fragment
+        android:id="@+id/nav_webView"
+        android:name="com.acompworld.teamconnect.ui.fragments.department.webView"
+        android:label=""
+        tools:layout="@layout/fragment_webview" />
+    <action
+        android:id="@+id/action_global_webView"
+        app:destination="@id/nav_webView"
+        app:enterAnim="@anim/enter_from_right"
+        app:exitAnim="@anim/exit_to_left"
+        app:popEnterAnim="@anim/enter_from_left"
+        app:popExitAnim="@anim/exit_to_right" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.acompworld.teamconnect.ui.fragments.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.acompworld.teamconnect.ui.fragments.gallery.PhotoFragment"
+        android:label="PhotoFragment"
+        tools:layout="@layout/fragment_photos" />
+    <action
+        android:id="@+id/action_global_photoFragment"
+        app:destination="@id/photoFragment" />
+    <fragment
+        android:id="@+id/nav_infoList"
+        android:name="com.acompworld.teamconnect.ui.fragments.home.InfoList"
+        android:label=""
+        tools:layout="@layout/fragment_infolist">
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.acompworld.teamconnect.ui.fragments.home.Info"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+    <action
+        android:id="@+id/action_global_nav_info"
+        app:destination="@id/nav_info" />
+
+    <fragment
+        android:id="@+id/nav_lms"
+        android:name="com.acompworld.teamconnect.ui.fragments.lms.LMSFragment"
+        android:label="Learning Management"
+        tools:layout="@layout/fragment_lms" />
+    <action
+        android:id="@+id/action_global_nav_lms"
+        app:destination="@id/nav_lms" />
+
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.acompworld.teamconnect.ui.login.LoginActivity"
+        tools:layout="@layout/activity_login" />
+    <action
+        android:id="@+id/action_global_nav_logout"
+        app:destination="@id/nav_logout"/>
+    <fragment
+        android:id="@+id/nav_incidence"
+        android:name="com.acompworld.teamconnect.ui.fragments.incidence.IncidenceFragment"
+        android:label="View Incidence"
+        tools:layout="@layout/fragment_incidence" >
+        <action
+            android:id="@+id/action_nav_incidenceDetail_to_incidenceDetailsFragment"
+            app:destination="@id/nav_incidenceDetail"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_nav_incidence_to_nav_incidenceReport"
+            app:destination="@id/nav_incidenceReport"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_incidenceDetail"
+        android:name="com.acompworld.teamconnect.ui.fragments.incidence.IncidenceDetailsFragment"
+        android:label="Incidence Detail"
+        tools:layout="@layout/fragment_incidence_details" >
+        <action
+            android:id="@+id/action_nav_incidenceDetail_to_nav_incidenceEdit"
+            app:destination="@id/nav_incidenceEdit"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_incidenceEdit"
+        android:name="com.acompworld.teamconnect.ui.fragments.incidence.IncidenceEditFragment"
+        android:label="Edit Incidence"
+        tools:layout="@layout/fragment_incidence_edit" />
+    <fragment
+        android:id="@+id/nav_incidenceReport"
+        android:name="com.acompworld.teamconnect.ui.fragments.incidence.IncidenceReportFragment"
+        android:label="Report Incidence"
+        tools:layout="@layout/fragment_incidence_report" />
+    <fragment
+        android:id="@+id/nav_hop"
+        android:name="com.acompworld.teamconnect.ui.fragments.hop.HOPFragment"
+        android:label=""
+        tools:layout="@layout/fragment_hop" />
+    <fragment
+        android:id="@+id/nav_downloads"
+        android:name="com.acompworld.teamconnect.ui.fragments.download.DownloadFragment"
+        android:label="Downloads"
+        tools:layout="@layout/fragment_download" />
+
+
+</navigation>

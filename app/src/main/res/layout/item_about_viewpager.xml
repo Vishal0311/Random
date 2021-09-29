@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        tools:background="@color/blue"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:background="@color/mild_white"
+        tools:text="Solapur Super Thermal Power Station is under construction located at Fatatewadi and Aherwadi village in Solapur district in Indian state of Maharashtra."
+        android:layout_gravity="bottom"
+        android:layout_below="@id/iv"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:textColor="@color/mild_black"/>
+
+</RelativeLayout>

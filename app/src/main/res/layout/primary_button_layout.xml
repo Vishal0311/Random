@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/PrimaryButtonLayoutTheme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/PrimaryButtonLayoutTheme"
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="01dp"
+        android:layout_marginTop="-05dp"
+        android:layout_marginRight="00dp"
+        android:layout_marginBottom="-06dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/source_sans_pro"
+        android:textSize="@dimen/betweenmedlargeTextSize"
+        android:minHeight="55dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

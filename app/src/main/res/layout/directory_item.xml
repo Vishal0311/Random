@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:src="@drawable/ic_test"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_pfp"/>
+    
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Priyanshu Maurya"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:textColor="@color/mild_black"
+        android:textSize="@dimen/_14ssp"
+        android:layout_toEndOf="@id/iv_pfp"
+        android:layout_alignParentTop="true"
+        android:paddingHorizontal="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/tv_designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andorid Intern"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:layout_toEndOf="@id/iv_pfp"
+        android:layout_below="@id/tv_name"
+        android:paddingHorizontal="@dimen/_10sdp"
+        />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_1sdp"
+      android:layout_toEndOf="@id/iv_pfp"
+      android:background="@color/grey"
+      android:layout_marginVertical="@dimen/_10sdp"
+      android:layout_below="@id/tv_designation"
+      android:alpha="0.3"
+      android:layout_marginStart="@dimen/_10sdp"/>
+</RelativeLayout>

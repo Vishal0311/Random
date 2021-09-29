@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.cardview.widget.CardView
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:backgroundTint="@color/mild_white"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            tools:background="@color/cardview_dark_background"
+            android:id="@+id/iv_thumbnail"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_desp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="It is possible to add icons to the buttons and show a different icon when the button is selected"
+            android:layout_below="@id/iv_thumbnail"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/mild_black"
+            android:fontFamily="@font/source_sans_pro"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+</FrameLayout>

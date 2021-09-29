@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.93">
+
+            <TextView
+                android:id="@+id/tv_incidence_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:textColor="@color/heading_black"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Fire Incidence" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/tv_incidence_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chip_bc"
+                    tools:text="08 JAN | 2:30am"
+                    android:layout_below="@id/tv_desp"
+                    android:textColor="@color/mild_black"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:textSize="@dimen/_10ssp"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_incidence_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chip_bc"
+                    tools:text="Main Plant"
+                    android:layout_below="@id/tv_desp"
+                    android:textColor="@color/mild_black"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:textSize="@dimen/_10ssp"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="@dimen/_17sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:alpha="0.2"
+                android:visibility="invisible"
+                android:background="@color/grey"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_incidence_arrow"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow"
+                />
+
+            <View
+                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:alpha="0.2"
+                android:visibility="invisible"
+                android:background="@color/grey"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:alpha="0.2"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/grey"/>
+
+
+</LinearLayout>

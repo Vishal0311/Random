@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xxtraLargeTextSize">30sp</dimen>
+    <dimen name="xtraLargeTextSize">24sp</dimen>
+    <dimen name="largeTextSize">20sp</dimen>
+    <dimen name="betweenmedlargeTextSize">18sp</dimen>
+    <dimen name="midbetweenmedlargeTextSize">16sp</dimen>
+    <dimen name="mediumTextSize">15sp</dimen>
+    <dimen name="smallTextSize">14sp</dimen>
+    <dimen name="verySmallTextSize">12sp</dimen>
+    <dimen name="veryVerySmallTextSize">10sp</dimen>
+
+
+
+    <dimen name="boxStrokeWidthSize">0.33dp</dimen>
+    <dimen name="boxStrokeWidthFocused">0.33dp</dimen>
+    <!--    <dimen name="boxStrokeWidthFocused">0.60dp</dimen>-->
+
+    <dimen name="standardCornerRadius">05dp</dimen>
+    <dimen name="teamListBoxCornerRadius">@dimen/standardCornerRadius</dimen>
+    <dimen name="teamListProfileBoxWidth">02dp</dimen>
+
+    <dimen name="profileTextViewFourDimension">40dp</dimen>
+    <dimen name="leftMarginToMemberListViews">-10dp</dimen>
+
+    <dimen name="standardLineSpacingExtra">02dp</dimen>
+    <dimen name="standardLetterSpacingExtra">0.05</dimen>
+</resources>

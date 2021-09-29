@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mild_white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            tools:background="@color/grey"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_about_viewpager"
+            android:layout_alignParentEnd="true"/>
+        <me.relex.circleindicator.CircleIndicator2
+            android:id="@+id/indicator"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_minus10sdp"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:id="@+id/container_mission_vission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10ssp"
+            android:layout_below="@id/rv_img">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:textColor="@color/mild_black"
+                tools:text="Information technology"
+                android:textSize="@dimen/_16ssp"/>
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Priority Queue is more specialized data structure than Queue. Like ordinary queue, priority queue has same method but with a major difference"
+                android:textColor="@color/mild_black"
+                android:fontFamily="@font/source_sans_pro"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10ssp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mild_black"
+                android:textSize="@dimen/_10ssp"
+                android:text="Our Mission :- "
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingTop="@dimen/_5sdp"/>
+
+            <TextView
+                android:id="@+id/tv_mission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Priority Queue is more specialized data structure than Queue. Like ordinary queue, priority queue has same method but with a major difference"
+                android:textColor="@color/mild_black"
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="@dimen/_10ssp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mild_black"
+                android:textSize="@dimen/_10ssp"
+                android:text="Our Vision :- "
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingTop="@dimen/_10sdp"/>
+            <TextView
+                android:id="@+id/tv_vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Priority Queue is more specialized data structure than Queue. Like ordinary queue, priority queue has same method but with a major difference"
+                android:textColor="@color/mild_black"
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="@dimen/_10ssp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/container_updates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/container_mission_vission">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:textColor="@color/mild_black"
+                tools:text="Updates"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_16ssp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_updates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_department_updates"
+                android:paddingStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_minus10sdp"/>
+
+        </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:clipToPadding="false"
+           android:paddingVertical="@dimen/_20sdp"
+           android:paddingHorizontal="@dimen/_10sdp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/container_updates"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           android:id="@+id/rv_docs"
+           tools:listitem="@layout/item_dept_info_docs"/>
+
+    </RelativeLayout>
+</ScrollView>
+<ProgressBar
+    android:visibility="gone"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progress_circular"/>
+</FrameLayout>

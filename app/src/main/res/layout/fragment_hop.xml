@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.fragments.hop.HOPFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/profileLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/source_baloo_semi_bold"
+                android:text="Debashish Chattopadhyay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_100sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/source_baloo_semi_bold"
+                android:text="Manager - HR"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_pfp"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="23dp"
+
+            android:layout_marginTop="7dp"
+            android:src="@color/design_default_color_on_secondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileLinear">
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_baloo_medium"
+                android:text="@string/hop_about"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_54sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/source_baloo_semi_bold"
+                    android:text="@string/schedule"
+                    android:textSize="@dimen/_20sdp" />
+
+                <TextView
+                    android:id="@+id/tv_incidence_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_desp"
+                    android:background="@drawable/hop_chip_bc"
+                    android:drawableStart="@drawable/ic_calendar"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:fontFamily="@font/source_baloo_medium"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:text="16th May"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/schedule_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_19sdp"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_hop_schedule" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/source_baloo_semi_bold"
+                android:text="@string/reports"
+                android:textSize="@dimen/_20sdp" />
+
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                android:id="@+id/toggle_btns_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:alignItems="flex_start"
+                app:flexWrap="wrap"
+                android:elevation="@dimen/_20sdp"
+                app:justifyContent="flex_start"
+                app:toggle_horizontalSpacing="@dimen/_3sdp">
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/review_meeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_20sdp"
+                    android:soundEffectsEnabled="true"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="Review Meetings"
+                    app:toggle_textColor="@color/grey"
+                    app:toggle_textSize="@dimen/_10sdp" />
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/OandMReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_20sdp"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="O&amp;M Reports"
+                    app:toggle_textColor="@color/grey"
+                    app:toggle_textSize="@dimen/_10sdp" />
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/projectReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_20sdp"
+                    app:toggle_backgroundColor="@color/white"
+                    app:toggle_selectedBackgroundColor="@color/yellow"
+                    app:toggle_selectedTextColor="@color/white"
+                    app:toggle_text="Project Reports"
+                    app:toggle_textColor="@color/grey"
+                    app:toggle_textSize="@dimen/_10sdp" />
+
+            </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reports_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_hop_report" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

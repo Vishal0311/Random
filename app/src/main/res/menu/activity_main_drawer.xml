@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home"
+            android:icon="@drawable/ic_menu_home"/>
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/menu_about"
+            android:icon="@drawable/ic_menu_about"/>
+        <item
+            android:id="@+id/nav_latest_news"
+            android:title="@string/menu_latest_news" />
+        <item
+            android:id="@+id/nav_directory"
+            android:title="@string/menu_directory" />
+        <item
+            android:id="@+id/nav_hop"
+            android:title="@string/menu_hop" />
+
+        <item
+            android:id="@+id/nav_incidence"
+            android:title="@string/incidence"/>
+
+        <item
+            android:id="@+id/nav_departments"
+            android:title="@string/menu_departments" />
+        <item
+            android:id="@+id/nav_reports"
+            android:title="@string/menu_reports" />
+        <item
+            android:id="@+id/nav_downloads"
+            android:title="@string/menu_downloads" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_complaints"
+            android:title="@string/menu_complaint" />
+        <item
+            android:id="@+id/nav_safety"
+            android:title="@string/menu_safety" />
+        <item
+            android:id="@+id/nav_lms"
+            android:title="@string/menu_learn" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/menu_logout"
+            android:icon="@drawable/ic_menu_logout"/>
+
+    </group>
+</menu>
